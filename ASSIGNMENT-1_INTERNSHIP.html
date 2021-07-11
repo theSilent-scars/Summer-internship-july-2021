@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Assignment_1</title>
+</head>
+
+<body>
+<center><h1>ASSIGNMENT 1</h1></center>
+
+<h3>STUDENT INFORMATION::</h3>
+
+<p><strong>Student Name:</strong><input type="text" id="sname" name="sname" value="Tanu Patel"/></p>
+<p><strong>Enrollnment Number:</strong><input type="text" id="enroll_no." name="enroll_no." value="0827CI201189"/></p>
+
+<h3>SUBJECT INFORMATION::</h3>
+
+<strong>
+1.  Engineering Chemistry (BT101):<input type="number" id=t1 name="BT101" /> <br><br>
+2.  Mathematice II (BT102):<input type="number" id=t2 name="BT102" /> <br><br>
+3.  Language for Communication (BT103):<input type="number" id=t3 name="BT103"/> <br><br>
+4.  Basic Electrical & Electronics Engineering (BT104):<input type="number" id=t4 name="BT104" /> <br><br>
+5.  Engineering Graphics (BT105):<input type="number" id=t5 name="BT105" /> <br><br>
+</strong>
+
+<input type="button" value="Total" onclick="Total()" /> 
+<input type="button" value="%" onclick="prst()" /> <br>
+<output id="out1" />
+<script>
+function Total()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=parseInt(t3.value);
+d=parseInt(t4.value);
+e=parseInt(t5.value);
+
+f=a+b+c+d+e;
+out1.value='Total Marks: ' + f 
+}
+
+function prst()
+{
+g=(a+b+c+d+e)/5
+out1.value='percentage:'   +g
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+<head><title>Registration Form</title></head>
+<body>
+<h1 align="center">ASSIGNMENT-2</h1>
+
+<strong>
+<a href="home.html">HOME</a>|
+<a href="register.html">REGISTER</a>|
+<a href="login.html">LOGIN</a>|
+<a href="about.html">ABOUT</a>|
+<a href="contact.html">CONTACT</a>
+</strong>
+
+<table border="0">
+<tr>
+<th colspan="2"><h3><U>REGISTRATION FORM :-</U></h3></th>
+</tr>
+<tr>
+   <th>User Id:</th>
+   <td><input type="text" name="u_id" id="u_id"></td>
+</tr><br>
+<tr>
+  <th>First Name:</th>
+  <td><input type="text" name="fname" id="fname"></td>
+</tr><br>
+<tr>
+<th>Last Name:</th>
+<td><input type="text" name="lname" id="lname"></td>
+</tr><br>
+<tr>
+<th>Password:</th>
+<td><input type="password" id="pwd" name="pwd"></td>
+</tr>
+<tr>
+<th>Email Id:</th>
+<td><input type="email" name="email" id="email"></td>
+</tr>
+<tr>
+<th>Contact:</th>
+<td><input type="number" name="pnumber" id="pnumber"></td>
+</tr>
+<tr>
+<th>Address:</th>
+<td><textarea id="txt_area"></textarea></td>
+</tr>
+<tr>
+<th>Date of Birth:</th>
+<td><input type="date" name="dob" id="dob"></td>
+</tr>
+<tr>
+<th>Country:</th>
+<td><select id="ctry_name">
+ <option>select your country--</option>
+ <option>India</option>
+ <option>America</option>
+ <option>Others</option>
+ </select>
+</td></tr>
+<tr><td></td><td></td></tr>
+<tr>
+ <td></td>
+ <th colspan="2"><input type="button" value="Register" onclick="xyz()"/></th>
+</tr>
+</table>
+
+<p id="p1"></p>
+
+<script>
+function xyz()
+{
+a=u_id.value
+b=fname.value
+c=lname.value
+d=pwd.value
+e=email.value
+f=pnumber.value
+g=txt_area.value
+h=dob.value
+i=ctry_name.value
+
+x="<table border=2>"
+x+="<tr><th> User id: </th><td>"+a +"</td></tr>"
+x+="<tr><th> First Name: </th><td>" +b+"</td></tr>"
+x+="<tr><th> Last Name: </th><td>"+c+"</td></tr>"
+x+="<tr><th> Password: </th><td>"+d+"</td></tr>"
+x+="<tr><th> Email id: </th><td>"+e+"</td></tr>"
+x+="<tr><th> Contact: </th><td>"+f+"</td></tr>"
+x+="<tr><th> Address: </th><td>"+g+"</td></tr>"
+x+="<tr><th> Date of Birth: </th><td>"+h+"</td></tr>"
+x+="<tr><th> Country: </th><td>"+i+"</td></tr>"
+x+="</table>"
+
+p1.innerHTML= x
+}
+</script>
+
+
+
+</body>
+</html>

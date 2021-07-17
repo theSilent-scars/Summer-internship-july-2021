@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title></title></head>
+<body>
+<h1 align="center">ASSIGNMENT-4</h1><br><br><br>
+<h2 align="center" ><u>Identification of Greatest Number</u></h2>
+
+<table border="0" align="center">
+<tr><th>Enter First Number: </th><td><input type="number" id="t1"></td></tr>
+<tr><th>Enter Second Number: </th><td><input type="number" id="t2"></td></tr>
+<tr><th>Enter Third Number: </th><td><input type="number" id="t3"></td></tr>
+<tr><th colspan="2"><input type="button" value="Find" onclick="greater()"></th></tr>
+<tr><td colspan="2"><p id="p1"></p></td></tr>
+</table>
+
+<script>
+function greater()
+{
+a=parseFloat(t1.value)
+b=parseFloat(t2.value)
+c=parseFloat(t3.value)
+
+if(a>b & a>c)
+p1.innerHTML="The greater number among these is "  +a 
+else if(b>a & b>c)
+p1.innerHTML="The greater number among these is "  +b
+else if(c>a & c>b)
+p1.innerHTML="The greater number among these is "  +c
+else if(a==b & c==b)
+p1.innerHTML="All three numbers are equal."
+}
+</script>
+</body>
+</html>
